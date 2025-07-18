@@ -376,7 +376,7 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Build
             sb.Replace("<UnityProductName>", Application.productName);
             sb.Replace("<gamebinary.exe>", buildExeName);
             sb.Replace("<ExeNameNoExt>", Path.GetFileNameWithoutExtension(buildExeName));
-            sb.Replace("<Example Game>", productConfig.ProductName);
+            sb.Replace("Example Game", productConfig.ProductName);
             sb.Replace("<your_eos_productid>", productConfig.ProductId.ToString("N").ToLowerInvariant());
             sb.Replace("<your_eos_sandboxid>", platformConfig.deployment.SandboxId.ToString());
             sb.Replace("<your_eos_deploymentid>", platformConfig.deployment.DeploymentId.ToString("N").ToLowerInvariant());
